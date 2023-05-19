@@ -48,15 +48,28 @@ public class Execucao {
 
         // Exercicio06_easy
 
-        String nota1Stg, nota2Stg;
-        nota1Stg = JOptionPane.showInputDialog("Por favor, digite a primeira nota: ");
-        nota2Stg = JOptionPane.showInputDialog("Por favor, digite a segunda nota: ");
+        //String nota1Stg, nota2Stg;
+        //nota1Stg = JOptionPane.showInputDialog("Por favor, digite a primeira nota: ");
+        //nota2Stg = JOptionPane.showInputDialog("Por favor, digite a segunda nota: ");
 
-        double nota1 = Double.parseDouble(nota1Stg);
-        double nota2 = Double.parseDouble(nota2Stg);
-        Exercicio06_easy exercicio06_easy = new Exercicio06_easy();
-        System.out.println(exercicio06_easy.verificaAprovacao(nota1, nota2));
+        //double nota1 = Double.parseDouble(nota1Stg);
+        //double nota2 = Double.parseDouble(nota2Stg);
+        //Exercicio06_easy exercicio06_easy = new Exercicio06_easy();
+        //System.out.println(exercicio06_easy.verificaAprovacao(nota1, nota2));
+
+        // Exercicio07_easy
+
+String salarioStg = JOptionPane.showInputDialog("Por favor, digite um salário: ");
+double salario = Double.parseDouble(salarioStg);// Conversão e atribuição na variavel salario
+Exercicio07_easy exercicio07_easy = new Exercicio07_easy();
+System.out.println("O valor do inss para um salário de: "+ salario +"  Será de : " + exercicio07_easy.calculaInss(salario));
+
+
+
 }
-    }
+}
+
+
+
 
 
